@@ -18,6 +18,8 @@
         <v-list-item to="/" active-class="active" prepend-icon="mdi-home-variant" title="Startseite" value="home" />
         <v-list-item to="/modelling" active-class="active" prepend-icon="mdi-pencil-ruler" title="Modellierung" value="modelling" />
         <v-list-item to="/checker" active-class="active" prepend-icon="mdi-code-greater-than" title="Überprüfung" value="checker" />
+        <v-list-item to="/checkerTeacher" active-class="active" prepend-icon="mdi-police-badge" title="Überprüfung Teacher" value="checkerTeacher" />
+        <v-list-item to="/checkerStudent" active-class="active" prepend-icon="mdi-account" title="Überprüfung Student" value="checkerStudent" />
       </v-list>
     </v-navigation-drawer>
 

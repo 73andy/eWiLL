@@ -6,6 +6,8 @@ import ViewImpressum from "../views/ViewImpressum.vue";
 import ViewDatenschutz from "../views/ViewDatenschutz.vue";
 import ViewLogin from "../views/ViewLogin.vue";
 import ViewProfile from "../views/ViewProfile.vue";
+import ViewCheckerStudent from "../views/ViewCheckerStudent.vue";
+import ViewCheckerTeacher from "../views/ViewCheckerTeacher.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -44,6 +46,16 @@ const router = createRouter({
       path: "/profile",
       name: "ViewProfile",
       component: ViewProfile,
+    },
+    {
+      path: "/checkerStudent",
+      name: "ViewCheckerStudent",
+      component: ViewCheckerStudent,
+    },
+    {
+      path: "/checkerTeacher",
+      name: "ViewCheckerTeacher",
+      component: ViewCheckerTeacher,
     },
   ],
 });
