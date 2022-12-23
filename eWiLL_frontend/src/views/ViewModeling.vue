@@ -26,7 +26,7 @@
       <IconEntityRelationshiptyp @mousedown="addElement($event, EntityType.ENTITYRELATIONSHIP)" />
     </div>
 
-    <div class="modellingContainer" @click.self="unselectAll">
+    <div class="modelingContainer" @click.self="unselectAll">
       <EntityMain v-for="entity in diagramStore.diagram.entities" :key="entity.id" :entity="entity" @anker-point="handleAnkerPoint" />
 
       <LineMain v-for="line in lineList" :key="line.id" :line="line" />
@@ -199,7 +199,7 @@ const addElement = (e: { clientY: number; clientX: number }, type: EntityType) =
   height: 100vh;
   margin-bottom: 5%;
 }
-.modellingContainer {
+.modelingContainer {
   position: relative;
   background-color: lavender;
   left: 15%;
