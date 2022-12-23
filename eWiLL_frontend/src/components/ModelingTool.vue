@@ -18,9 +18,9 @@
   <!-- <div>{{ selectedEntity }}</div> -->
 
   <div class="container">
-    <ModalAddAttributes v-if="props.mode == Mode.EDIT" />
+    <ModalAddAttributes v-if="toolManagementStore.mode == Mode.EDIT" />
 
-    <div v-if="props.mode == Mode.EDIT" class="toolbox">
+    <div v-if="toolManagementStore.mode == Mode.EDIT" class="toolbox">
       <IconEntity id="item" draggable="true" @click="addElement($event, EntityType.ENTITY)" />
       <IconRelationshiptyp @mousedown="addElement($event, EntityType.RELATIONSHIP)" />
       <IconEntityRelationshiptyp @mousedown="addElement($event, EntityType.ENTITYRELATIONSHIP)" />
@@ -58,10 +58,6 @@ import Mode from "../enums/Mode";
 
 const diagramStore = useDiagramStore();
 const toolManagementStore = useToolManagementStore();
-
-const props = defineProps<{
-  mode: Mode;
-}>();
 
 const lineList: Line[] = reactive([
   //{ "id": 1, "x1": 200, "y1": 100, "x2": 0, "y2": 0},
