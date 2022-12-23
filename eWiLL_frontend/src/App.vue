@@ -41,7 +41,7 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from "vue-router";
 import IconEWiLL from "./components/icons/IconEWiLL.vue";
-import DropdownUserNav from "./components/DropdownUserNav.vue";
+import DropdownUserNav from "./components/modelingTool/DropdownUserNav.vue";
 import { ref } from "vue";
 
 const showSideBar = ref(true);

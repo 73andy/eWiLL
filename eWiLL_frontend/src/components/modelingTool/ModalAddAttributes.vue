@@ -40,10 +40,10 @@
 <script setup lang="ts">
 import { ref, computed } from "vue";
 import draggable from "vuedraggable";
-import { useToolManagementStore } from "../stores/toolManagementStore";
+import { useToolManagementStore } from "../../stores/toolManagementStore";
 
-import AttributeType from "../enums/AttributeType";
-import Attribute from "../model/diagram/Attribute";
+import AttributeType from "../../enums/AttributeType";
+import Attribute from "../../model/diagram/Attribute";
 
 const toolManagementStore = useToolManagementStore();
 
